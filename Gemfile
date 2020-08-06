@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'https://rubygems.org/'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0'
@@ -13,7 +13,18 @@ gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
-gem 'thin'
+
+
+gem 'omniauth', '~> 1.9', '>= 1.9.1'
+
+
+gem 'omniauth-facebook', '~> 6.0'
+
+gem 'omniauth-google-oauth2'
+
+gem 'omniauth-github'
+
+gem 'dotenv-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -41,6 +52,8 @@ group :development, :test do
   gem 'spring'
 
   gem 'pry'
+
+  gem 'thin'
 end
 
 # Access an IRB console on exception pages or by using <%= console %> in views
